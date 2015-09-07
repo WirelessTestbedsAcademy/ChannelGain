@@ -5,7 +5,7 @@ Channel gain experiment
 LOG-a-TEC
 ---------
 
-The `logatec.py` script uses a pair of sensor nodes in the City Center cluster
+The `logatec.py` script uses a pair of sensor nodes in the Campus cluster
 of the LOG-a-TEC testbed and measures channel gain between them. Two
 measurements are done: first noise power is measured at the receiving node
 while the transmitter is silent. After that, receiving node measures received

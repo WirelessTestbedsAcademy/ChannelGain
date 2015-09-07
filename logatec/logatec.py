@@ -142,10 +142,10 @@ def main():
 	logging.basicConfig(level=logging.INFO)
 
 	# We must first create an object representing the coordinator node.
-	coor = alh.ALHWeb("https://crn.log-a-tec.eu/communicator", 10002)
+	coor = alh.ALHWeb("https://crn.log-a-tec.eu/communicator", 9501)
 
-	# We will be using node 31 in the LOG-a-TEC City Center out-door
-	# cluster as the transmitting node and node 23 in the same cluster as
+	# We will be using node 51 in the LOG-a-TEC Campus in-door
+	# cluster as the transmitting node and node 53 in the same cluster as
 	# the receiving node.
 	#
 	# These nodes are equipped with SNE-ISMTV-2400 radio boards that contain
@@ -154,8 +154,8 @@ def main():
 	#
 	# Make sure you reserved the cluster in the calendar before running the
 	# experiment!
-	txnode = alh.ALHProxy(coor, 31)
-	rxnode = alh.ALHProxy(coor, 23)
+	txnode = alh.ALHProxy(coor, 51)
+	rxnode = alh.ALHProxy(coor, 53)
 
 	pair = NodePair(txnode, rxnode)
 
